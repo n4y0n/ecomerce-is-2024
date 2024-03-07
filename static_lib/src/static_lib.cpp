@@ -1,6 +1,6 @@
 #include "static_lib.h"
-#include <iostream>
+#include <spdlog/spdlog.h>
 
 void static_lib_p() {
-  std::cout << "static_lib_p" << std::endl;
+  spdlog::info("static_lib_p");
 }

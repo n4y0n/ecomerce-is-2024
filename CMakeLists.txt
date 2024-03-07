@@ -125,19 +125,9 @@ project(cmake_sample_all CXX)
 #
 
 add_subdirectory(third_party)
-# header only library project
-add_subdirectory(header_lib)
 
 # static library project
 add_subdirectory(static_lib)
-
-# shared library project
-add_subdirectory(shared_lib)
-
-# CUDA project
-# add_subdirectory(cuda)
-
-add_subdirectory(cuda_lib)
 
 # main project
 add_subdirectory(core)
