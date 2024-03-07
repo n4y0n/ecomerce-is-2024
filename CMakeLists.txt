@@ -36,6 +36,7 @@ endif()
 # OUTPUT PATH
 #
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
+
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/$<CONFIG>/bin)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/$<CONFIG>/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/$<CONFIG>/lib)
@@ -104,7 +105,7 @@ endif()
 
 # Strip for release build
 # add_link_options($<$<CONFIG:Release,MinSizeRel>:-s>)
-# add_link_options($<$<CONFIG:Release>:-s> $<$<CONFIG:Release>:-EHsc>)
+add_link_options($<$<CONFIG:Release>:-s>)
 
 # Set shared library search path to ORIGIN
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
@@ -124,7 +125,6 @@ project(cmake_sample_all CXX)
 #
 # SUBDIRECTORIES
 #
-
 add_subdirectory(third_party)
 
 # static library project
