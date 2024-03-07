@@ -1,0 +1,3 @@
+add_subdirectory(by_nanobench)
+add_subdirectory(by_googletest)
+add_subdirectory(by_doctest)
