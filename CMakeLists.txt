@@ -103,7 +103,7 @@ endif()
 
 # Strip for release build
 # add_link_options($<$<CONFIG:Release,MinSizeRel>:-s>)
-add_link_options($<$<CONFIG:Release>:-s>)
+# add_link_options($<$<CONFIG:Release>:-s> $<$<CONFIG:Release>:-EHsc>)
 
 # Set shared library search path to ORIGIN
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
