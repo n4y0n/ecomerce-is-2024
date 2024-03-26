@@ -1,0 +1,49 @@
+{
+    "env": {
+        "myIncludePath": [
+            "${workspaceFolder}/core/**",
+            "${workspaceFolder}/cuda_lib/**",
+            "${workspaceFolder}/static_lib/**",
+            "${workspaceFolder}/test/**",
+            "${workspaceFolder}/third_party/spdlog/include/**",
+            "${workspaceFolder}/third_party/argz/**",
+            "${workspaceFolder}/build/_deps/doctest-src/doctest/**"
+        ],
+        "myDefines": []
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${myIncludePath}",
+                "/usr/include/cuda/**",
+                "/usr/local/cuda/include/**"
+            ],
+            "defines": [
+                "${myDefines}"
+            ],
+            "compilerPath": "/usr/local/cuda/bin/nvcc",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "mergeConfigurations": true
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${myIncludePath}"
+            ],
+            "defines": [
+                "${myDefines}"
+            ],
+            "cStandard": "c17",
+            "windowsSdkVersion": "10.0.19041.0",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64",
+            "mergeConfigurations": true
+        }
+    ],
+    "version": 4
+}
