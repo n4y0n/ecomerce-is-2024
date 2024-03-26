@@ -2,4 +2,4 @@ project(thrid_party CXX)
 
 add_subdirectory(spdlog)
 
-add_subdirectory(libpgxx)
+add_subdirectory(libpqxx)
