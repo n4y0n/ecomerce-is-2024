@@ -5,10 +5,10 @@ Progetto per l'esame di ingegneria del software.
 #### Primi Passi
 
 ```sh
-git clone ssh://git@git.nayon.xyz:222/n4y0n/progetto-ecomerce-is.git --recurse
+git clone git@github.com:n4y0n/progetto-is-2024.git --recurse
 ```
 ```sh
-cd progetto-ecomerce-is
+cd progetto-is-2024
 ```
 ```sh
 make
