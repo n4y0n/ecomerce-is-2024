@@ -2,6 +2,15 @@
 
 Progetto per l'esame di ingegneria del software.
 
+#### Prerequisiti
+
+1. la libreria PostgreSQL
+2. cmake
+3. make (opzionale)
+4. un compilatore cpp (clang, gcc, ecc.)
+5. git
+
+
 #### Primi Passi
 
 ```sh
