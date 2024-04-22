@@ -8,10 +8,6 @@ file(
 
 add_library(${PROJECT_NAME} STATIC ${MAIN_SOURCE_FILES})
 
-target_include_directories(${PROJECT_NAME} 
-  PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/.. 
-)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE hiredis)
