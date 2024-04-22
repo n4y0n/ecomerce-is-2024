@@ -1,4 +1,4 @@
-project(database CXX)
+project(con2db CXX)
 
 find_package(PostgreSQL REQUIRED)
 

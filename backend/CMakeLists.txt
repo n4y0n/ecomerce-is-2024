@@ -17,4 +17,4 @@ add_library(${PROJECT_NAME} STATIC ${STATIC_SOURCE_FILES})
 # header
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE spdlog database)
+target_link_libraries(${PROJECT_NAME} PRIVATE spdlog con2db con2redis)
