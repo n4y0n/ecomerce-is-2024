@@ -4,7 +4,11 @@
 #include <iostream>
 
 int main() {
-  static_lib_p();
-  spdlog::info("hello spd log");
+  spdlog::info("Starting application");
+
+  ConnectReddis();
+  ConnectPostgres();
+
+  spdlog::info("Application finished");
   return 0;
 }

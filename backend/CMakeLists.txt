@@ -1,9 +1,9 @@
-project(static_lib CXX)
+project(backend_lib CXX)
 
 file(
   GLOB_RECURSE STATIC_SOURCE_FILES
   RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} CONFIGURE_DEPENDS src/*.c*)
-add_library(static_lib STATIC ${STATIC_SOURCE_FILES})
+add_library(${PROJECT_NAME} STATIC ${STATIC_SOURCE_FILES})
 
 # Boost
 # set(Boost_USE_STATIC_LIBS ON)
@@ -15,7 +15,6 @@ add_library(static_lib STATIC ${STATIC_SOURCE_FILES})
 # target_include_directories(my_static_lib SYSTEM PRIVATE ${Boost_INCLUDE_DIRS})
 
 # header
-target_include_directories(static_lib
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-target_link_libraries(static_lib PRIVATE spdlog)
+target_link_libraries(${PROJECT_NAME} PRIVATE spdlog database)

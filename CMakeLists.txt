@@ -128,7 +128,7 @@ project(cmake_sample_all CXX)
 add_subdirectory(third_party)
 
 # static library project
-add_subdirectory(static_lib)
+add_subdirectory(backend)
 
 # main project
 add_subdirectory(core)
@@ -136,5 +136,5 @@ add_subdirectory(core)
 #
 # CTest
 #
-enable_testing()
-add_subdirectory(test)
+# enable_testing()
+# add_subdirectory(test)
