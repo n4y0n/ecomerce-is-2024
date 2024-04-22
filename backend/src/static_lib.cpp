@@ -1,5 +1,6 @@
 #include "static_lib.h"
 #include <spdlog/spdlog.h>
+#include <pgsql.h>
 
 
 void ConnectReddis() {
@@ -8,4 +9,5 @@ void ConnectReddis() {
 
 void ConnectPostgres() {
   spdlog::info("Connecting to Postgres");
+  Con2DB pg("127.0.0.1", "5432", "postgres", "postgres", "postgres");
 }
