@@ -4,11 +4,12 @@ Progetto per l'esame di ingegneria del software.
 
 #### Prerequisiti
 
-1. la libreria PostgreSQL
-2. cmake
-3. make (opzionale)
-4. un compilatore cpp (clang, gcc, ecc.)
-5. git
+1. cmake
+2. make (opzionale)
+3. un compilatore cpp (clang, gcc, ecc.)
+4. git
+5. la libreria PostgreSQL
+6. libreria hiredis
 
 
 #### Primi Passi
